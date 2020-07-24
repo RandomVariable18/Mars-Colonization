@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<title>Welcome Aboard!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="Page_1/Basic.html" class="w3-bar-item w3-button">Welcome to the Rover!</a>
+  <a href="Page_2/Weighted.html" class="w3-bar-item w3-button">To the rugged Path</a>
+  <a href="Page_3/Tour.html" class="w3-bar-item w3-button">Tour all the Bases</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Project</a>  
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Nav <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="Page_1/Basic.html" class="w3-bar-item w3-button">Welcome to the Rover!</a>
+      <a href="Page_2/Weighted.html" class="w3-bar-item w3-button">To the rugged Path</a>
+      <a href="Page_3/Tour.html" class="w3-bar-item w3-button">Tour all the Bases</a>
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
+    <a href="#work" class="w3-bar-item w3-button">Project</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="Page_1/Mars_pic_2.png" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+</div>
+
+<!-- Modal-->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+    </header>
+    
+    <footer class="w3-container w3-teal">
+      <p>Modal footer</p>
+    </footer>
+  </div>
+</div>
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2>OUR TEAM</h2>
+<p>Meet the team:</p>
+
+<div class="w3-row"><br>
+
+<div class="w3-half">
+  <img src="https://media-exp1.licdn.com/dms/image/C5603AQGElozJIE8ayg/profile-displayphoto-shrink_200_200/0?e=1600905600&v=beta&t=6rHkhGiFp-6l6Ffel8LQCEkmAtJm58gGHf8IG5crab8" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Sohom Majumdar</h3>
+  <p>Web Developer<br>Quantum Computing Enthusiast </p>
+</div>
+
+<div class="w3-half">
+  <img src="https://media-exp1.licdn.com/dms/image/C5103AQHg2XPp-he_Dg/profile-displayphoto-shrink_200_200/0?e=1600905600&v=beta&t=G2mxnR8DPG34GKpZcxE2spgqThuJLksOBWLi0WHkhDA" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Pretam Ray</h3>
+  <p>Backend Developer</p>
+</div>
+
+</div>
+</div>
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+<div class="w3-quarter">
+<h2>Our Project</h2>
+<p>The Work presented here was done during the Microsoft Engage Program,under the mentorship of <strong>Mr.Anurag Ohri(SDE,Microsoft)</strong></p>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <a href="Page_1/Basic.html" target="_blank"><img src="Page_1/arxivmars-12.png" alt="Snow" style="width:100%"></a>
+  <div class="w3-container">
+  <h3>Welcome to the Rover!</h3>
+  <p>A basic visualization of shortest path finding algorithms on unweighted graphs,Only permanent obstacles here; which the Rover cannot cross</p>
+  <p>Covers:</p>
+  <p>1) BFS</p>
+  <p>2) Dijkstra</p>
+  <p></p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <a href="Page_2/Weighted.html" target="_blank"><img src="Page_2/Colour_image_of_Crater_Holden_and_Uzboi_Vallis_pillars.png" alt="Lights" style="width:100%"></a>
+  <div class="w3-container">
+  <h3>Here Comes the Rugged Path!</h3>
+  <p>Implentation of shortest path finding algorithms on weighted graph, blockades are more versatile here.You can choose weights for each blockade</p>
+  <p>Covers:</p>
+  <p>1)Dijkstra</p>
+  <p></p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <a href="Page_3/Tour.html" target="_blank"><img src="Page_3/UT-from-space-probe-greatredspot.png" alt="Mountains" style="width:100%"></a>
+  <div class="w3-container">
+  <h3>Cover All Bases!</h3>
+  <p>Shows the shortest path that covers all the bases starting from the selected point</p>
+  <p></p>
+  <p></p>
+  </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Suggest Improvements</span></div>
+     
+      <p>It's just a beginner's Project as of now, <br>but lots of improvements to come!.</p>
+      
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +91 7001797352</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  sohom.jgm@gmail.com</p>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
+-->
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Check Us Out</h4>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="https://www.linkedin.com/in/sohom-majumdar-7082a218a" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="https://in.linkedin.com/in/pretam-ray-182a06144" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <p>Hosted on <a href="https://github.com/RandomVariable18/Mars-Colonization" target="_blank">Github</a></p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

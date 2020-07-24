@@ -1,0 +1,176 @@
+/*html
+{
+	background:rgb(245, 144, 66);
+}*/
+body
+{
+	margin:0px 10px;
+	background-image:url('arxivmars-12.png');/*,url('Mars_pic_2.png');
+										background-size:100vw 100vh;
+										background-position:top,bottom;*/
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	position:relative;
+}
+
+#Head
+{
+	background-image:radial-gradient(rgba(30,30,30,1),rgba(30,30,30,0.6));
+	color:yellow;
+	font-size:2em;
+	text-align:center;
+	padding:2%;
+	border:5px inset black;
+	border-radius:10px;
+}
+#Foot
+{
+	color:white;
+	position:fixed;
+	bottom:2vh;
+	text-align:center;
+	display:inline-block;
+	background-image:radial-gradient(rgba(30,30,30,1),rgba(30,30,30,0.6));
+	padding:1.8vw;
+	border:3px outset black;
+	padding-right:2.8vw;
+	border-radius:10px;
+}
+#Foot a
+{
+	color:steelblue;
+}
+
+.box
+{
+	border:1px solid black;
+	border-collapse:collapse;
+}
+#Grid-main
+{
+	background-color:white;
+	/*width:50%;
+	height:50%;*/
+	margin:10vh 15vw;
+	
+}
+
+#Mid
+{
+	display:grid;
+	display:none;
+	grid-template-columns:70vw 30vw;
+	/*grid-auto-rows:auto auto;*/
+}
+
+#Sidebar
+{
+	float:right;
+	background-image:radial-gradient(rgba(30,30,30,1),rgba(30,30,30,0.6));
+	border:2px outset black;
+	display:grid;
+	grid-template-rows: repeat(5,1fr);
+	height:100vh;
+	width:15vw;
+	margin:auto; 
+	color:coral;
+	border-radius:10px;
+}
+
+.Label
+{
+	display:block;
+	margin-bottom:2%;
+}
+
+.dropDiv
+{
+	color:#f3f3f3;
+	padding:10%;
+	margin-bottom:15%;
+	background:rgba(30,30,30,0.7);
+}
+.MenuLabel
+{
+	background:rgba(10,10,10);
+	border:1px grey inset;
+	margin:1vh;
+	text-align:center;
+}
+
+.drop-content
+{
+	display:none;
+}
+
+.SubmitDiv
+{
+	margin:auto;
+	margin-bottom:5%;
+}
+.SubmitDiv>input
+{
+	background-color:black;
+	color:white;
+	width:7vw;
+}
+.SubmitDiv>input:hover
+{
+	background-color:blue;
+}
+.SubmitDiv>input:active
+{
+	background-color:red;
+}
+
+.ClearDiv
+{
+	margin:auto;
+	margin-bottom:5%;
+}
+.ClearDiv>input
+{
+	background-color:black;
+	color:white;
+	width:7vw;
+}
+.ClearDiv>input:hover
+{
+	background-color:blue;
+}
+.ClearDiv>input:active
+{
+	background-color:red;
+}
+
+#Instructions
+{
+	background-image:radial-gradient(rgba(30,30,30,1),rgba(30,30,30,0.6));
+	border:2px outset black;
+	color:white;
+	margin-top:10vh;
+	height:20vh;
+	border-radius:10px;
+}
+#After-Head
+{
+	display:grid;
+	grid-template-columns:repeat(2,1fr);
+	grid-column-gap:20vh;
+}
+#Grid-generator
+{
+	background-image:radial-gradient(rgba(30,30,30,1),rgba(30,30,30,0.6));
+	border:2px outset black;
+	color:white;
+	margin:10vh 5vw;
+	padding:5vh;
+	text-align:center;
+	position:relative;
+	border-radius:10px;
+}
+#Grid-generator>div
+{
+	margin-bottom:3vh;
+}
