@@ -60,7 +60,7 @@ function generateGrid(e)
 {
 	r = Generator[0].value;
 	c = Generator[1].value;
-	//console.log(r,c);
+	
 	if(grid.innerHTML!="")
 		grid.innerHTML="";
 	if( gridGraph!= [])	
@@ -79,10 +79,10 @@ function generateGrid(e)
 		grid.innerHTML+='<tr>'+s+'</tr>';
 		gridGraph.push(row);
 	}
-	//console.log(gridGraph);
+	
 	gridBack.style.display="grid";
 	gridVisual = document.querySelectorAll('td');
-	//console.log(gridVisual);
+	
 	initializeObstacle();
 	initializeStartNode();
 	initializeEndNode();
@@ -191,7 +191,7 @@ function initializeObstacle()
 
 function clickBox(e)
 {
-	//console.log('Hello');
+	
 	if(e.target.style.background!="red" && e.target.style.background!="blue")
 	{
 		
@@ -250,7 +250,7 @@ function selectStart(e)
 			e.target.style.background='red';
 			gridGraph[x][y]='0';
 			startNode=e.target.className;
-			//console.log(startNode);
+			
 		}
 	}
 		
@@ -287,7 +287,7 @@ function selectEnd(e)
 			e.target.style.background = 'blue';
 			gridGraph[x][y]='0';
 			endNode = e.target.className;	
-			//console.log(endNode);
+			
 		}
 	}
 	
@@ -380,7 +380,7 @@ function Dijkstra(diagonal=true)
 	{
 		let shortestStep = pq.dequeue();
 		let currentNode = shortestStep[0];
-		//console.log(shortestStep);
+		
 		if(currentNode!=startNode && currentNode!=endNode)
 		{
 			let Node = document.querySelector(`[class="${currentNode}"]`);
@@ -399,7 +399,7 @@ function Dijkstra(diagonal=true)
 				times[v] = time;
 				backtrace[v] = currentNode;
 				pq.enqueue([v, time]);
-				//console.log(v,time);
+				
 			}
 		}
 	}
